@@ -1,0 +1,293 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #4d3d3d;
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+/* menu-toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #e7dedf; /* Soft opal */
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    header .navlinks {
+        display: none; /* Hide on small screens */
+    }
+    header .navlinks.active {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #7a3e3e;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+}
+/* Centered Content Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
+
+/* Image Styling */
+.image-with-margin {
+    display: block;
+    max-width: 100%; /* Ensures the image scales within the container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 6.35mm auto; /* Quarter-inch margin, centered */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
+}
+
+/* Header Section */
+header {
+    background-color: #7a3e3e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+header .navlinks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #e7dedf; /* Soft opal */
+}
+
+/* Navigation Links */
+header .navlinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+header .navlinks a {
+    color: #e7dedf;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .navlinks a:hover {
+    background-color: #d6c4c5; /* Muted opal */
+}
+
+/* Floating Main Content */
+.section {
+    padding: 2rem 1rem;
+    color: #4d3d3d;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #7a3e3e; /* Auburn */
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #4d3d3d; /* Deep auburn */
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background-color: #7a3e3e; /* Auburn */
+    color: #e7dedf; /* Soft opal */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.call-to-action .cta-btn {
+    background-color: #e7dedf; /* Soft opal */
+    color: #7a3e3e; /* Auburn */
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-btn:hover {
+    background-color: #d6c4c5; /* Muted opal */
+}
+
+/* Footer */
+footer .socials a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e7dedf;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer .socials a:hover {
+    background-color: #d6c4c5;
+    color: #4d3d3d;
+    transform: scale(1.1);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #e7dedf; /* Soft opal */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd7c2; /* Light opal */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+footer .logo-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer .logo-container img {
+    width: 75px; /* Smaller, complementary size */
+    height: auto;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border-radius: 50%; /* Circular logo appearance */
+    border: 2px solid #e7dedf; /* Opal border for styling */
+}
+
+footer .socials {
+    margin-top: 1rem;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    padding: 0.3rem 0.6rem; /* Adds spacing to clickable links */
+    border-radius: 5px; /* Rounded link buttons */
+    transition: background-color 0.3s ease;
+}
+
+footer .socials a:hover {
+    background-color: #d6c4c5; /* Muted opal hover */
+    color: #4d3d3d; /* Deep auburn for contrast */
+}
+
+/* about-hero */
+.about-hero {
+    background: url('images/about-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+/* contact */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group label {
+    font-weight: bold;
+    color: #7a3e3e; /* Auburn */
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d6c4c5; /* Muted opal */
+    border-radius: 5px;
+}
+
+.contact-form .cta-btn {
+    background-color: #7a3e3e; /* Auburn */
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .cta-btn:hover {
+    background-color: #d6c4c5; /* Muted opal */
+}
+
+/* Portfolio-projects */
+.project-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #f5f5f5; /* Soft opal */
+    border: 1px solid #d6c4c5; /* Muted opal */
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #7a3e3e; /* Auburn */
+    margin-bottom: 1rem;
+}
