@@ -52,7 +52,6 @@ body {
 /* Centered Content Container */
 .container {
     width: 90%;
-    max-width: 800px;
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
