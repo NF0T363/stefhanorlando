@@ -11,58 +11,60 @@
     <!-- External CSS -->
     
 </head>
-<body>
-    <div rel="container" href="css/styles.css">
+<body class="body" href="css/styles.css">
     <header>
-        <div class="container">
+        <div>
             <h1 class="logo">stefhanorlando</h1>
-            <nav>
-                <ul class="navlinks">
-                    <li><a href="index.html">Harriott's Hanger</a></li>
-                    <li><a href="/portfolio/portfolio.html" class="container">Projects</a></li>
-                    <li><a href="about.html">Mission</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a href="#donate" class="donate-btn">Donate</a>
-            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
+    <nav>
+           <a href="index.html">Harriott's Hanger</a>
+           <a href="portfolio/portfolio.html" class="active">stefhanorlando</a>
+           <a href="about.html">About</a>
+           <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="Donate" class="call-to-action" href="css/styles.css">
+     <div class="cta-btn">
+        <button onclick="window.open('https://paypal.me/YourPayPalLink', '_blank')">Donate</button>
+     </div>
+    </section>
+
+    <section>
+     <div id="greeting">
         <div class="container">
-            <div rel="main" href="css/styles.css">
             <h1>Guayá nitayno gua.
                 </h1>
-                <p>Welcome to my "space o +perspective. Emjoy as I "Draft Thoughts for Tomorrow"</p>
-            <img src="images/example.png" alt="Description of image" class="image-with-margin">
-            <p>Here is some body text accompanying the image.</p>
-            </div>
+                <p>Drafting Thoughts for Tomorrow</p>
+
         </div>
-    </main>
+        <div id="Working Progress" class="grid-item">
+            <figure src="images/example.png" alt="Description of image" content="width-device-width", initial-scale="1.0">
+            </figure>
+            <p>Here is some body text accompanying the image.</p>
+        </divv>
+    </section>
 
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
             <!-- Logo Section -->
             <div class="logo-container" style="text-align: center; margin-bottom: 1rem;">
-                <img src="images/logo.png.svg" alt="Foundation Logo" style="width: 100px; height: auto;">
+                <img src="images/logo-white.png" alt="Foundation Logo" style="width: 100px; height: auto;">
+                <P>
+                    <a href="/stefhanorlando/portfolio/daily-art/dailyart.html">Visit our running-Gallery TODAY</a>
+                </P>
             </div>
             
             <!-- Footer Text -->
-            <p>&copy; 2024 Harriott's Hanger Foundation. All rights reserved.</p>
-            <p>Published and maintained by <a href="https://www.stefhanorlando.com" target="_blank">stefhanorlando</a>.</p>
-            <p>Email: <a href="mailto:dailyincorperated@gmail.com">dailyincorperated@gmail.com</a></p>
+            <p>&copy; <strong>2024 Harriott's Hanger Foundation.</strong> All Rights Reserved. | <a href="..contact.html">Contact</a></p>
+            <p>&#8471; Copyright & Published maintained by <strong><a href="https://www.stefhanorlando.com" target="_blank">stefhanorlando</a></strong></p>
+            <p>Email: <a href="mailto:dailyartinc@gmail.com">dailyartinc@gmail.com</a></p>
             
             <!-- Social Links -->
             <div class="socials" style="margin-top: 1rem;">
-                <a href="OTis AWEburn" url="https://open.spotify.com/artist/4IcB3rrbXkzFCF64wU1VeD?si=6Hpa2I-ZR42u39ER4pNd2Q" style="margin: 0 10px; text-decoration: none;">Spotify</a>
+                <a href="OTis AWEburn" style="margin: 0 10px; text-decoration: none;">Spotify</a>
                 <a href="OTis AWEburn" style="margin: 0 10px; text-decoration: none;">Apple Music</a>
                 <a href="stefhanorlando" style="margin: 0 10px; text-decoration: none;">Twitter</a>
                 <a href="stefhanorlando" style="margin: 0 10px; text-decoration: none;">Instagram</a>
@@ -71,7 +73,6 @@
     </footer>
 
     <!-- External JavaScript -->
-    <script src="script.js"></script>
-    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
