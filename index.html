@@ -25,49 +25,60 @@
            <a href="contact.html">Contact</a>
     </nav>
 
-    <section id="Donate" class="call-to-action" href="css/styles.css">
-     <div class="cta-btn">
-        <button onclick="window.open('https://paypal.me/YourPayPalLink', '_blank')">Donate</button>
-     </div>
-    </section>
-
     <section>
      <div id="greeting">
         <div class="container">
-            <h1>Guayá nitayno gua.
+            <h1 align="center">Guayá nitayno gua.
                 </h1>
-                <p>Drafting Thoughts for Tomorrow</p>
+            <p align="center">Drafting Thoughts for Tomorrow</p>
 
         </div>
-        <div id="Working Progress" class="grid-item">
-            <figure src="images/example.png" alt="Description of image" content="width-device-width", initial-scale="1.0">
-            </figure>
-            <p>Here is some body text accompanying the image.</p>
-        </divv>
+        <div style="background-color: transparent;" id="Working Progress" class="grid-item">
+            <img src="images/self-portrait.png" content="width-device-width", initial-scale="1.0">
+            <h1 style="margin: 15px;">Self Portrait</h1>
+            <p>“I see myself as a cacophony of interpersonal presence—a culmination of my unique perspective.”</p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
+            <section>
+                <div id="donate-button-container">
+                    <div style="line-height: 5;" id="donate-button"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                    PayPal.Donation.Button({
+                    env:'production',
+                    hosted_button_id:'Q8Q6VQ9VXVCC4',
+                    image: {
+                    src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                    alt:'Donate with PayPal button',
+                    title:'PayPal - The safer, easier way to pay online!',
+                    }
+                    }).render('#donate-button');
+                    </script>
+                    </div>            
+            </section>
             <!-- Logo Section -->
             <div class="logo-container" style="text-align: center; margin-bottom: 1rem;">
                 <img src="images/logo-white.png" alt="Foundation Logo" style="width: 100px; height: auto;">
-                <P>
-                    <a href="/stefhanorlando/portfolio/daily-art/dailyart.html">Visit our running-Gallery TODAY</a>
-                </P>
+                <p>    
+                    <a href="portfolio/daily-art/dailyart.html">Visit our running-Gallery TODAY</a>
+                </p>
             </div>
             
             <!-- Footer Text -->
-            <p>&copy; <strong>2024 Harriott's Hanger Foundation.</strong> All Rights Reserved. | <a href="..contact.html">Contact</a></p>
-            <p>&#8471; Copyright & Published maintained by <strong><a href="https://www.stefhanorlando.com" target="_blank">stefhanorlando</a></strong></p>
+            <p>&copy; <strong>2024 Harriott's Hanger Foundation.</strong> All Rights Reserved. | <a href="contact.html">Contact</a></p>
+            <p>&#8471; Copyright & Published maintained by <strong><a href="portfolio/portfolio.html" target="_blank">stefhanorlando</a></strong></p>
             <p>Email: <a href="mailto:dailyartinc@gmail.com">dailyartinc@gmail.com</a></p>
             
             <!-- Social Links -->
             <div class="socials" style="margin-top: 1rem;">
-                <a href="OTis AWEburn" style="margin: 0 10px; text-decoration: none;">Spotify</a>
-                <a href="OTis AWEburn" style="margin: 0 10px; text-decoration: none;">Apple Music</a>
-                <a href="stefhanorlando" style="margin: 0 10px; text-decoration: none;">Twitter</a>
-                <a href="stefhanorlando" style="margin: 0 10px; text-decoration: none;">Instagram</a>
+                <a href="https://open.spotify.com/artist/4IcB3rrbXkzFCF64wU1VeD?si=OmeE7SpITH-IrL6A4Gi_Nw&nd=1&dlsi=e255ed5c72de415a$0" style="margin: 0 10px; text-decoration: none;">Spotify</a>
+                <a href="https://music.apple.com/us/artist/otis-aweburn/1555779736$0" style="margin: 0 10px; text-decoration: none;">Apple Music</a>
+                <a href="https://x.com/stefhanorlando$0" style="margin: 0 10px; text-decoration: none;">Twitter</a>
+                <a href="https://www.instagram.com/stefhanorlando?igsh=MWZnYXJwbHc1ZTY5bQ==$0" style="margin: 0 10px; text-decoration: none;">Instagram</a>
             </div>
         </div>
     </footer>
