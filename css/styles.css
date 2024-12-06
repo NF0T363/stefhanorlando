@@ -1,148 +1,124 @@
-/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body Styling */
+header, main, footer {
+  margin: 20px auto; /* Adds breathing room around sections */
+  max-width: 1200px; /* Ensures consistent layout */
+  padding: 10px; /* Adds inner spacing */
+}
+
 body {
-    display: flex;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #4d3d3d;
-    background-color: #f5f5f5;
-    padding: 2rem;
-    align-content: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #e7dedf;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* menu-toggle */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background-color: #e7dedf; /* Soft opal */
-    margin: 3px 0;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-    header .navlinks {
-        display: none; /* Hide on small screens */
-    }
-    header .navlinks.active {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        background-color: #7a3e3e;
-        padding: 1rem;
-        border-radius: 10px;
-    }
-}
-/* Centered Content Container */
-.container {
-    width: 90%;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 1.5rem;
-    }
-}
-
-/* Image Styling */
-.image-with-margin {
-    display: block;
-    max-width: 100%; /* Ensures the image scales within the container */
-    height: auto; /* Maintains aspect ratio */
-    margin: 6.35mm auto; /* Quarter-inch margin, centered */
-    border-radius: 5px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow */
-}
-
-/* Header Section */
 header {
-    background-color: #7a3e3e;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 10px 10px 0 0;
+  background: #7a3e3e;
+  color: #e7dedf;
+  padding: 20px;
+  text-align: center;
 }
 
-header .navlinks {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-    overflow: hidden;
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-header .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #e7dedf; /* Soft opal */
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.8;
 }
 
-/* Navigation Links */
-header .navlinks {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
+nav {
+  background: #f4f4f4;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
 }
 
-header .navlinks a {
-    color: #e7dedf;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 10px;
 }
 
-header .navlinks a:hover {
-    background-color: #d6c4c5; /* Muted opal */
+nav a:hover {
+  color: #000;
+  font-weight: bold;
 }
 
-/* Floating Main Content */
-.section {
-    padding: 2rem 1rem;
-    color: #4d3d3d;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    margin: 1rem 0;
+donate-btn {
+  text-justify: center;
+  width: fit-content;
 }
 
-.section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #7a3e3e; /* Auburn */
+image-width-margin{
+  width: 100%;
+  margin: 0 10px;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
 }
 
-.section p {
-    font-size: 1.2rem;
-    color: #4d3d3d; /* Deep auburn */
+.grid-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow-x: scroll;
+  display: flex; /* Ensures content is responsive */
+  flex-direction: column; /* Aligns items vertically */
+   align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  padding: 15px; /* Adds some breathing room */
+  overflow: visible; /* Ensures nothing gets cut off */
 }
 
-/* Call to Action Section */
+.grid-item img {
+  width: 100%;
+  display: block;
+}
+
+.grid-item h1 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+
+.grid-item h2 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  margin: 15px;
+  color: #555;
+}
+
+#paypal-container-5CRKXZEA7YCS4, #paypal-container-DBACJZTBXSKHG {
+  width: 100%; /* Ensures button uses full width */
+  max-width: 400px; /* Set a max width if necessary */
+  margin: 10px auto; /* Center-align and add spacing */
+  padding: 10px;
+}
+
 .call-to-action {
-    background-color: #7a3e3e; /* Auburn */
+    background-color: #e7dedf; /* Auburn */
     color: #e7dedf; /* Soft opal */
     padding: 2rem;
     border-radius: 10px;
@@ -150,11 +126,12 @@ header .navlinks a:hover {
 }
 
 .call-to-action .cta-btn {
-    background-color: #e7dedf; /* Soft opal */
-    color: #7a3e3e; /* Auburn */
+    background-color: #7a3e3e; /* Soft opal */
+    color: #e7dedf; /* Auburn */
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
+    text-align: justify;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
@@ -163,7 +140,23 @@ header .navlinks a:hover {
     background-color: #d6c4c5; /* Muted opal */
 }
 
-/* Footer */
+footer {
+  background: #7a3e3e;
+  color: #e7dedf;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #e7dedf;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 footer .socials a {
     display: inline-block;
     margin: 0 10px;
@@ -178,120 +171,4 @@ footer .socials a:hover {
     background-color: #d6c4c5;
     color: #4d3d3d;
     transform: scale(1.1);
-}
-
-footer p {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-footer a {
-    color: #e7dedf; /* Soft opal */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-footer a:hover {
-    color: #ffd7c2; /* Light opal */
-    transform: scale(1.1); /* Slight zoom effect */
-}
-
-footer .logo-container {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-footer .logo-container img {
-    width: 75px; /* Smaller, complementary size */
-    height: auto;
-    display: inline-block;
-    margin-bottom: 1rem;
-    border-radius: 50%; /* Circular logo appearance */
-    border: 2px solid #e7dedf; /* Opal border for styling */
-}
-
-footer .socials {
-    margin-top: 1rem;
-}
-
-footer .socials a {
-    margin: 0 10px;
-    padding: 0.3rem 0.6rem; /* Adds spacing to clickable links */
-    border-radius: 5px; /* Rounded link buttons */
-    transition: background-color 0.3s ease;
-}
-
-footer .socials a:hover {
-    background-color: #d6c4c5; /* Muted opal hover */
-    color: #4d3d3d; /* Deep auburn for contrast */
-}
-
-/* about-hero */
-.about-hero {
-    background: url('images/about-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 4rem 0;
-}
-
-/* contact */
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form .form-group label {
-    font-weight: bold;
-    color: #7a3e3e; /* Auburn */
-}
-
-.contact-form .form-group input,
-.contact-form .form-group textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #d6c4c5; /* Muted opal */
-    border-radius: 5px;
-}
-
-.contact-form .cta-btn {
-    background-color: #7a3e3e; /* Auburn */
-    color: #fff;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form .cta-btn:hover {
-    background-color: #d6c4c5; /* Muted opal */
-}
-
-/* Portfolio-projects */
-.project-grid {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project {
-    background-color: #f5f5f5; /* Soft opal */
-    border: 1px solid #d6c4c5; /* Muted opal */
-    padding: 1.5rem;
-    border-radius: 5px;
-    text-align: center;
-    flex: 1;
-    min-width: 280px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    font-size: 1.5rem;
-    color: #7a3e3e; /* Auburn */
-    margin-bottom: 1rem;
 }
