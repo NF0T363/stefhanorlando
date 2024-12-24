@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #e7dedf;
+  color: #333;
+  line-height: 1.6;
+  width: 100%;
+  padding: 50px;
+  margin: 0;
+}
+
+header {
+  background: #7a3e3e;
+  color: #e7dedf;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  }
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+nav {
+  background: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+donate-btn {
+  text-justify: center;
+  width: fit-content;
+}
+
+image-width-margin{
+  width: 100%;
+  margin: 0 10px;
+
+}
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.grid-item {
+  width: 100%;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow-x: scroll;
+  display: flex; /* Ensures content is responsive */
+  flex-direction: column; /* Aligns items vertically */
+   align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  padding: 15px; /* Adds some breathing room */
+  overflow: visible; /* Ensures nothing gets cut off */
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+}
+
+.grid-item h1 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+
+.grid-item h2 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  margin: 15px;
+  color: #555;
+}
+
+.carousel {
+  position: relative;
+  width: 100%; /* Ensure it spans the parent container */
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Align buttons and images properly */
+}
+
+.carousel-slide {
+  display: flex; /* Aligns images in a single row */
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Matches the carousel width */
+}
+
+.carousel-slide img {
+  width: 100%; /* Ensure images fit the container */
+  flex-shrink: 0; /* Prevent images from shrinking */
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #7a3e3e;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+
+#paypal-container-5CRKXZEA7YCS4, #paypal-container-DBACJZTBXSKHG, #paypal-container-ZBTPEAS4YJVHA, #paypal-container-BU55H9XXBZ4MC {
+  width: 100%; /* Ensures the container stretches fully */
+  max-width: 100%; /* Limits the width */
+  margin: 10px auto; /* Centers the container */
+  padding: 10px; /* Adds spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Flexbox wrapper */
+.paypal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.call-to-action .cta-btn {
+    background-color: #7a3e3e; /* Soft opal */
+    color: #e7dedf; /* Auburn */
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: justify;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-btn:hover {
+    background-color: #d6c4c5; /* Muted opal */
+}
+
+footer {
+  background: #7a3e3e;
+  color: #e7dedf;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 30px;
+  margin-top: 40px;
+  
+}
+
+footer a {
+  color: #e7dedf;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .socials a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e7dedf;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer .socials a:hover {
+    background-color: #d6c4c5;
+    color: #4d3d3d;
+    transform: scale(1.1);
+}
+
