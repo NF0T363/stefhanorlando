@@ -10,6 +10,9 @@ body {
   background-color: #e7dedf;
   color: #333;
   line-height: 1.6;
+  width: 100%;
+  padding: 50px;
+  margin: 0;
 }
 
 header {
@@ -36,7 +39,7 @@ header p {
 
 nav {
   background: #f4f4f4;
-  padding: 10px 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
