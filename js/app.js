@@ -57,3 +57,38 @@ if (menuToggle && navMenu) {
         menuToggle.classList.toggle("open"); // Toggle icon state
     });
 }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Setup for all carousels
+  const carousels = document.querySelectorAll(".carousel");
+
+  carousels.forEach((carousel) => {
+    const carouselSlide = carousel.querySelector(".carousel-slide");
+    const images = carousel.querySelectorAll(".carousel-slide img");
+    const prevButton = carousel.querySelector(".carousel-prev");
+    const nextButton = carousel.querySelector(".carousel-next");
+
+    let currentIndex = 0;
+
+    const updateCarousel = () => {
+      const imageWidth = images[0].clientWidth;
+      carouselSlide.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    };
+
+    // Add event listeners to buttons
+    prevButton.addEventListener("click", () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener("click", () => {
+      currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+      updateCarousel();
+    });
+
+    // Update carousel on window resize to adjust for image width
+    window.addEventListener("resize", updateCarousel);
+  });
+});
