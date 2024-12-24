@@ -69,6 +69,7 @@ image-width-margin{
 
 }
 .grid-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -76,6 +77,7 @@ image-width-margin{
 }
 
 .grid-item {
+  width: 100%;
   background: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -110,21 +112,71 @@ image-width-margin{
   color: #555;
 }
 
-#paypal-container-5CRKXZEA7YCS4, #paypal-container-DBACJZTBXSKHG {
-  width: 100%; /* Ensures button uses full width */
-  max-width: 400px; /* Set a max width if necessary */
-  margin: 10px auto; /* Center-align and add spacing */
+.carousel {
+  position: relative;
+  width: 100%; /* Ensure it spans the parent container */
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Align buttons and images properly */
+}
+
+.carousel-slide {
+  display: flex; /* Aligns images in a single row */
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Matches the carousel width */
+}
+
+.carousel-slide img {
+  width: 100%; /* Ensure images fit the container */
+  flex-shrink: 0; /* Prevent images from shrinking */
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #7a3e3e;
+  color: white;
+  border: none;
   padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
 
-.call-to-action {
-    background-color: #e7dedf; /* Auburn */
-    color: #e7dedf; /* Soft opal */
-    padding: 2rem;
-    border-radius: 10px;
-    margin: 2rem 0;
+.carousel-prev {
+  left: 10px;
 }
 
+.carousel-next {
+  right: 10px;
+}
+
+
+#paypal-container-5CRKXZEA7YCS4, #paypal-container-DBACJZTBXSKHG, #paypal-container-ZBTPEAS4YJVHA, #paypal-container-BU55H9XXBZ4MC {
+  width: 100%; /* Ensures the container stretches fully */
+  max-width: 100%; /* Limits the width */
+  margin: 10px auto; /* Centers the container */
+  padding: 10px; /* Adds spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Flexbox wrapper */
+.paypal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 .call-to-action .cta-btn {
     background-color: #7a3e3e; /* Soft opal */
     color: #e7dedf; /* Auburn */
@@ -172,3 +224,4 @@ footer .socials a:hover {
     color: #4d3d3d;
     transform: scale(1.1);
 }
+
