@@ -14,13 +14,17 @@ body {
   margin: 0;
 }
 
+.container {
+
+}
 header {
   background: #7a3e3e;
   color: #e7dedf;
   text-align: center;
   width: 100% !important;
   margin: 0;
-}
+  padding: 50px 0px;
+  }
 
 header h1 {
   font-size: 2.5rem;
@@ -36,12 +40,14 @@ header p {
 
 nav {
   background: #f4f4f4;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a {
@@ -49,6 +55,13 @@ nav a {
   text-decoration: none;
   font-size: 1rem;
   margin: 0 10px;
+}
+
+/* Make sure links resize on smaller screens */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 0.9rem;
+  }
 }
 
 nav a:hover {
@@ -194,10 +207,8 @@ footer {
   background: #7a3e3e;
   color: #e7dedf;
   text-align: center;
-  padding-bottom: 30px;
-  margin-top: 40px;
+  padding: 50px;
   width: 100% !important;
-  
 }
 
 footer a {
@@ -224,4 +235,3 @@ footer .socials a:hover {
     color: #4d3d3d;
     transform: scale(1.1);
 }
-
