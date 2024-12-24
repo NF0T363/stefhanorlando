@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-header, main, footer {
-  margin: 20px auto; /* Adds breathing room around sections */
-  max-width: 1200px; /* Ensures consistent layout */
-  padding: 10px; /* Adds inner spacing */
-}
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -20,8 +15,11 @@ body {
 header {
   background: #7a3e3e;
   color: #e7dedf;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
+  width: 100%;
+  margin: 0;
+  }
 }
 
 header h1 {
@@ -196,8 +194,10 @@ footer {
   background: #7a3e3e;
   color: #e7dedf;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
+  padding-bottom: 30px;
   margin-top: 40px;
+  
 }
 
 footer a {
