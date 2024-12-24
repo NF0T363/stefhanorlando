@@ -10,7 +10,7 @@ body {
   background-color: #e7dedf;
   color: #333;
   line-height: 1.6;
-  width: 100%;
+  width: 100% !important;
   padding: 50px;
   margin: 0;
 }
@@ -20,7 +20,7 @@ header {
   color: #e7dedf;
   padding: 50px;
   text-align: center;
-  width: 100%;
+  width: 100% !important;
   margin: 0;
   }
 }
@@ -200,6 +200,7 @@ footer {
   padding: 50px;
   padding-bottom: 30px;
   margin-top: 40px;
+  width: 100% !important;
   
 }
 
