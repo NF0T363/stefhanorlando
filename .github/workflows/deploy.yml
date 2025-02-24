@@ -16,3 +16,6 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Install Cloudflare Wrangler
+  run: npm install -g wrangler
